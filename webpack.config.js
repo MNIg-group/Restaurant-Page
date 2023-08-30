@@ -5,25 +5,15 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     devtool: 'inline-source-map',
-    devServer: {
-        static: {
-            directory: path.join(__dirname, 'dist'),
-        },
-        compress: true,
-        port: 9000,
-    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Home',
         }),
     ],
     output: {
-        filename: '[name].js',
+        filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-    },
-    optimization: {
-        runtimeChunk: 'single',
     },
     module: {
         rules: [
