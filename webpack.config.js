@@ -7,7 +7,7 @@ module.exports = {
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Home',
+            title: ' Lepidus | Restaurant',
         }),
     ],
     output: {
